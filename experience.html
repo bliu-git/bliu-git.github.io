@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Experience - Bowen Liu</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #111;
+      color: white;
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding-top: 50px;
+    }
+    .nav-tabs .nav-link {
+      color: white;
+    }
+    .nav-tabs .nav-link.active {
+      border-bottom: 2px solid white;
+    }
+    .tab-content {
+      background-color: #222;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .experience-card {
+      background: #222;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Bowen Liu</a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
+          <li class="nav-item"><a class="nav-link" href="experience.html">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Experience Section -->
+  <div class="container">
+    <h1 class="mb-4">Experience</h1>
+
+    <!-- Tabs -->
+    <ul class="nav nav-tabs justify-content-center" id="experienceTabs">
+      <li class="nav-item">
+        <a class="nav-link active" data-bs-toggle="tab" href="#cambium">Cambium</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="tab" href="#amazon">Amazon</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="tab" href="#gengeneration">GenGeneration</a>
+      </li>
+    </ul>
+
+    <!-- Tab Content -->
+    <div class="tab-content mt-4">
+      
+      <!-- Cambium -->
+      <div class="tab-pane fade show active" id="cambium">
+        <div class="experience-card">
+          <h3>Research Scientist - Cambium Assessment</h3>
+          <p><small>May 2023 – Present</small></p>
+          <p>Leading predictive modeling research in student growth and fairness in automatic scoring.</p>
+          <ul>
+            <li>Conducted statistical and psychometric analysis using R.</li>
+            <li>Developed machine learning models for assessment scoring.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Amazon -->
+      <div class="tab-pane fade" id="amazon">
+        <div class="experience-card">
+          <h3>Research Scientist - Amazon</h3>
+          <p><small>Sep 2019 – Apr 2021</small></p>
+          <p>Developed employee performance evaluation metrics and research-driven insights.</p>
+          <ul>
+            <li>Collaborated with teams to optimize performance tracking.</li>
+            <li>Advocated research findings to stakeholders for strategic decisions.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- GenGeneration -->
+      <div class="tab-pane fade" id="gengeneration">
+        <div class="experience-card">
+          <h3>Co-Founder - GenGeneration</h3>
+          <p><small>May 2021 – May 2023</small></p>
+          <p>Designed business plans and customer experience surveys.</p>
+          <ul>
+            <li>Conducted consumer behavior analysis for market insights.</li>
+            <li>Built analytical tools for customer feedback assessment.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
