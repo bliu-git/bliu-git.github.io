@@ -13,6 +13,12 @@
       font-family: Arial, sans-serif;
     }
 
+    .content-container {
+      max-width: 800px;  /* Only limits the content width, NOT the navbar */
+      margin: auto;
+      padding-top: 50px;
+    }
+
     h1 {
       font-size: 4rem;
       font-weight: bold;
@@ -26,9 +32,9 @@
 </head>
 <body>
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container"> <!-- Added container here -->
+<!-- Keep navbar full-width -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">  <!-- Navbar stays full-width -->
     <a class="navbar-brand" href="index.html">Bowen Liu</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
@@ -45,10 +51,11 @@
     </div>
   </div>
 </nav>
-
+  
   <!-- About Me Section -->
-  <div class="container mt-5">
-    <h1>About Me</h1>
+  <div class="content-container">
+   <h1 class="mb-4">About Me</h1>
+
     <p>
       I am a research scientist with a Ph.D. in Quantitative Measurement. I focus on constructing measurement tools and conducting survey research using psychometric and statistical analysis for data-driven insights with R and Qualtrics. 
       My work experience includes roles in both academia and industry, involving research on educational measurement, talent assessment, and customer behavior analysis. 
